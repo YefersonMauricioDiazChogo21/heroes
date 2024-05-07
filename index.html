@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/boostrapjs/bootstrap.js" defer></script>
+    <link rel="stylesheet" href="css/boostrapcss/bootstrap.css">
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Heros</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="card text-center">
+                <div class="card-header">
+                  Heros
+                </div>
+                <div class="card-body">
+                    <form id="formHeros" class="row g-3">
+                        <div class="col-md-4">
+                          <label for="nombrePersonaje" class="form-label">Nombre del personaje</label>
+                          <input type="text" class="form-control" id="nombrePersonaje"  name="nombrePersonaje" value="" required>
+                        </div>
+                        <div class="col-md-4">
+                          <label for="nombreActor" class="form-label">Nombre del actor</label>
+                          <input type="text" class="form-control" id="nombreActor" name="nombreActor" value="" required>
+                        </div>
+                        <div class="col-md-4">
+                          <label for="edad" class="form-label">Edad</label>
+                          <div class="input-group">
+                            <!--<span class="input-group-text" id="inputGroupPrepend2">@</span>-->
+                            <input type="text" class="form-control" id="edad" name="edad" aria-describedby="inputGroupPrepend2" required>
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <label for="ciudad" class="form-label">Ciudad de origen</label>
+                          <input type="text" class="form-control" id="ciudad" name="ciudad" required>
+                        </div>
+                        <div class="col-md-3">
+                          <label for="franquisia" class="form-label">Franquisia</label>
+                          <select class="form-select" id="franquisia" name="franquisia" required>
+                            <option selected disabled value="">Elige la opcion...</option>
+                            <option value="DC">DC</option>
+                            <option value="Marvel">Marvel</option>
+                          </select>
+                        </div>
+                        <div class="col-md-3">
+                          <label for="poster" class="form-label">Poster</label>
+                          <input type="text" class="form-control" id="poster" name="poster" required>
+                        </div>
+                        <div class="col-md-3">
+                          agregar traje
+                          <button id="newSuit" class="btn btn-dark">+</button>
+                          <div class="trajes-nuevos">
+
+                          </div>
+                        </div>
+                        <div class="col-12">
+                          <button id="newSuit" class="btn btn-secondary">Agregar nuevo Heroe</button>
+                          <button id="save" class="btn btn-primary" type="submit">Submit form</button>
+                        </div>
+                      </form>
+                </div>
+                <div class="card-footer text-body-secondary">
+                  2 days ago
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</body>
+
+</html>
